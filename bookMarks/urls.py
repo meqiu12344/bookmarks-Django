@@ -23,6 +23,7 @@ from bookMarks import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('account/', include('account.urls')),
+    path('images/', include('images.urls', namespace='image')),
 ]
 
 if settings.DEBUG:

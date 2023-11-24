@@ -20,7 +20,7 @@
                 </li>
 
                 <li {% if section == 'images' %} class="selected" {% endif %}>
-                    <a href="#">Zdjęcia</a>
+                    <a href="{% url "image:create" %}">Zdjęcia</a>
                 </li>
 
                 <li {% if section == 'people' %} class="selected" {% endif %}>
